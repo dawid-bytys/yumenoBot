@@ -397,7 +397,7 @@ bot.on('message', message => {
     }
     async function send() {
       try {
-        const request = await fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyDbs65FpjVrfBy5_3HK_EOqbojEBjCGJZ4&cx=016738891135948974521:fipagl7i2i0&q=${makeSortString(argStr)}&searchType=image`)
+        const request = await fetch(`https://www.googleapis.com/customsearch/v1?key=...&cx=...&q=${makeSortString(argStr)}&searchType=image`)
         const response = await request.json()
         let image = 0;
         let img1 = 1;
